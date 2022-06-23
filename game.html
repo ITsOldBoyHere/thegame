@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="chat.js"></script>
+        <link rel="stylesheet" type="text/css" href="chatbox.css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <input type="button" value="Zacznij grę" onclick="chatbox()" id="button">
+        <div id="chatbox" class="chatbox">
+            <span id="last_word"></span>
+            Wpisz słowo: <input type="text" size="20" id="txt" onkeypress="if(event.keyCode==13) {word(this.value)}">
+            <span id="summary"></span>
+        </div>
+    </body>
+</html>
